@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:fillViewport="true"
+    android:id="@+id/scrollView">
+
+
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:itemCount="2"
+            tools:listitem="@layout/item_chating"
+            android:layout_above="@id/ll_edittext"
+            android:id="@+id/recycler_chating"/>
+
+
+        <LinearLayout
+            android:id="@+id/ll_show_action"
+            android:gravity="center"
+            android:visibility="gone"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_above="@id/ll_edittext"
+            android:background="@drawable/bg_white"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_marginBottom="10dp"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/ll_action_document"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_margin="3dp"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:layout_width="60dp"
+                    android:layout_height="70dp">
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:background="@drawable/border_black"
+                        android:src="@drawable/outline_insert_drive_file_24"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Dokumen"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_action_video"
+                    android:layout_margin="3dp"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:layout_width="60dp"
+                    android:layout_height="70dp">
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:background="@drawable/border_black"
+                        android:src="@drawable/ic_video"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="video"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/image_upload_gallery"
+                    android:layout_margin="3dp"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:layout_width="60dp"
+                    android:layout_height="70dp">
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:background="@drawable/border_black"
+                        android:src="@drawable/gallery"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Gallery"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_action_location"
+                    android:layout_margin="3dp"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:layout_width="60dp"
+                    android:layout_height="70dp">
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:background="@drawable/border_black"
+                        android:src="@drawable/baseline_location_pin_24"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Lokasi"/>
+
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_margin="3dp"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:layout_width="60dp"
+                    android:layout_height="70dp">
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:background="@drawable/border_black"
+                        android:src="@drawable/outline_photo_camera_24"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Kamera"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_margin="3dp"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:layout_width="60dp"
+                    android:layout_height="70dp">
+
+                    <ImageView
+                        android:background="@drawable/border_black"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/headphone"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Audio"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_margin="3dp"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:layout_width="60dp"
+                    android:layout_height="70dp">
+
+                    <ImageView
+                        android:background="@drawable/border_black"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/baseline_bar_chart_24"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Poling"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:paddingTop="10dp"
+            android:id="@+id/ll_edittext"
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_marginBottom="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/chat_linear"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:padding="13dp"
+                        android:src="@drawable/outline_emoji_emotions_24" />
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:hint="Ketik pesan"
+                        android:background="@null"
+                        android:id="@+id/input_message"/>
+                    <ImageView
+                        android:id="@+id/image_file_show"
+                        android:padding="13dp"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/baseline_attach_file_24"/>
+                    <ImageView
+                        android:id="@+id/image_camera_action"
+                        android:padding="13dp"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/outline_photo_camera_24"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_action"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/background_green_radio"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp">
+
+                    <ImageView
+                        android:id="@+id/image_action"
+                        android:padding="13dp"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/baseline_mic_24"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:background="@color/white"
+                android:id="@+id/ll_keyboard"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</androidx.core.widget.NestedScrollView>

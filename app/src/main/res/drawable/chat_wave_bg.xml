@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="@color/green"/>
+            <corners android:radius="10dp"/>
+        </shape>
+    </item>
+
+    <!-- Tambahkan efek gelombang -->
+    <item android:bottom="0dp">
+        <vector
+            android:width="50dp"
+            android:height="10dp"
+            android:viewportWidth="50"
+            android:viewportHeight="10">
+            <path
+                android:fillColor="@color/green"
+                android:pathData="M0,5 Q5,0 10,5 T20,5 T30,5 T40,5 T50,5"/>
+        </vector>
+    </item>
+</layer-list>

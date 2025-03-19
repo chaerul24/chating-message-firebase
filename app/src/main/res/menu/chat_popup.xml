@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/reply"
+        android:title="Balas"
+        android:icon="@drawable/outline_reply_24" />
+
+    <item
+        android:id="@+id/copy"
+        android:title="Salin"
+        android:icon="@drawable/baseline_content_copy_24" />
+
+    <item
+        android:id="@+id/delete"
+        android:title="Hapus"
+        android:icon="@drawable/baseline_close_24" />
+</menu>

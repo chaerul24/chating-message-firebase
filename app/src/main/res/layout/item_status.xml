@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:layout_margin="5dp"
+        android:layout_width="90dp"
+        android:layout_height="150dp"
+        app:cardCornerRadius="10dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+
+            <wtc.material.image.ImageWtcView
+                app:scaleType="centerCrop"
+                app:imageError="@drawable/image_error"
+                app:imagePlaceholder="@drawable/image_placeholder"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/image_wtc"/>
+
+            <TextView
+                android:text="user"
+                android:layout_alignParentRight="true"
+                android:gravity="end"
+                android:layout_marginRight="8dp"
+                android:layout_marginBottom="5dp"
+                android:layout_alignParentBottom="true"
+                android:textSize="12sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/text_user"/>
+            <ImageView
+                android:id="@+id/image_profile"
+                android:background="@drawable/border_status_true"
+                android:layout_margin="5dp"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:src="@mipmap/ic_launcher"/>
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>
