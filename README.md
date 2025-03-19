@@ -18,6 +18,8 @@ Chating adalah aplikasi chatting real-time yang menggunakan teknologi Firebase u
 - **Backend PHP** - Untuk mengelola autentikasi OTP, penyimpanan pesan, dan file/gambar.
 - **MySQL** - Untuk menyimpan data pengguna dan pesan.
 
+## Instalasi dan Konfigurasi
+
 ## Struktur Backend (PHP)
 
 ```
@@ -37,9 +39,6 @@ Chating adalah aplikasi chatting real-time yang menggunakan teknologi Firebase u
 │── send_otp.php      # Skrip PHP untuk mengirim kode OTP ke email pengguna
 │── token.php         # Skrip untuk mengelola token autentikasi pengguna
 │── verify.php        # Skrip untuk verifikasi OTP pengguna
-```
-
-## Instalasi dan Konfigurasi
 
 ### 1. Clone Repository
 
@@ -68,8 +67,8 @@ Pastikan semua dependencies sudah terpasang di `build.gradle (Module: app)`, lal
 
 - Buat akun di [Brevo](https://www.brevo.com/)
 - Dapatkan API Key dari dashboard Brevo
-- Simpan API Key di `chating/local.properties` 
-- Serta setting configurtaion
+- Simpan API Key di `chating/local.properties`
+- Serta setting konfigurasi:
 
 ```sh
 TWILIO_ACCESS_TOKEN=
@@ -85,10 +84,43 @@ BASE_URL_INDEX=
 BASE_URL_IMAGE=
 ```
 
+## Struktur Firebase Realtime Database
+
+```json
+{
+  "status": {
+    "id_status_1": {
+      "file": "https://wallpapercave.com/wp/wp5096363.jpg",
+      "jam": "10:00 AM",
+      "sender": "user1@gmail.com",
+      "tanggal": "14/03/2025"
+    },
+    "id_status_2": {
+      "file": "https://i.pinimg.com/736x/ce/68/1b/ce681b7d113cd575feea3c4ac04091bd.jpg",
+      "jam": "09:00 AM",
+      "sender": "user2@gmail.com",
+      "tanggal": "14/03/2025",
+      "view": {
+        "-sajkshuihj": {
+          "email": "user1@gmail.com",
+          "read": true
+        }
+      }
+    },
+    "id_status_3": {
+      "file": "https://i.blogs.es/c217db/hunter-x-hunter/1366_2000.jpeg",
+      "jam": "09:00 AM",
+      "sender": "user1@gmail.com",
+      "tanggal": "14/03/2025"
+    }
+  }
+}
+```
+
 ---
 
 **Dibuat dengan ❤️ oleh Chaerul Wahyu Iman Syah**
 
-📸 Instagram: [zona.erul](https://instagram.com/zona.erul)\
+📸 Instagram: [zona.erul](https://instagram.com/zona.erul)  
 🎵 TikTok: [chaerulhome21](https://www.tiktok.com/@chaerulhome21)
 
