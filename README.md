@@ -1,6 +1,6 @@
-# ChatApp
+# Chating
 
-ChatApp adalah aplikasi chatting real-time yang menggunakan teknologi Firebase untuk autentikasi, Brevo untuk pengiriman OTP email, dan backend PHP untuk menyimpan file/gambar di server.
+Chating adalah aplikasi chatting real-time yang menggunakan teknologi Firebase untuk autentikasi, Brevo untuk pengiriman OTP email, dan backend PHP untuk menyimpan file/gambar di server.
 
 ## Fitur Utama
 
@@ -23,8 +23,8 @@ ChatApp adalah aplikasi chatting real-time yang menggunakan teknologi Firebase u
 ### 1. Clone Repository
 
 ```sh
-git clone https://github.com/username/chatapp.git
-cd chatapp
+git clone https://github.com/chaerul24/chating-message-firebase
+cd chating-message-firebase
 ```
 
 ### 2. Buka di Android Studio
