@@ -39,6 +39,8 @@ Chating adalah aplikasi chatting real-time yang menggunakan teknologi Firebase u
 │── send_otp.php      # Skrip PHP untuk mengirim kode OTP ke email pengguna
 │── token.php         # Skrip untuk mengelola token autentikasi pengguna
 │── verify.php        # Skrip untuk verifikasi OTP pengguna
+```
+
 
 ### 1. Clone Repository
 
