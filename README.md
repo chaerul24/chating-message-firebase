@@ -86,7 +86,7 @@ BASE_URL_INDEX=
 BASE_URL_IMAGE=
 ```
 
-## Struktur Firebase Realtime Database
+## Struktur Firebase Status/Pembaruan
 
 ```json
 {
