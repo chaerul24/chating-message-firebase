@@ -1,0 +1,28 @@
+{
+  "status": {
+    "id_status_1": {
+      "file": "https://wallpapercave.com/wp/wp5096363.jpg",
+      "jam": "10:00 AM",
+      "sender": "user1@gmail.com",
+      "tanggal": "14/03/2025"
+    },
+    "id_status_2": {
+      "file": "https://i.pinimg.com/736x/ce/68/1b/ce681b7d113cd575feea3c4ac04091bd.jpg",
+      "jam": "09:00 AM",
+      "sender": "qenboxofficial@gmail.com",
+      "tanggal": "14/03/2025",
+      "view": {
+        "-sajkshuihj": {
+          "email": "user1@gmail.com",
+          "read": true
+        }
+      }
+    },
+    "id_status_3": {
+      "file": "https://i.blogs.es/c217db/hunter-x-hunter/1366_2000.jpeg",
+      "jam": "09:00 AM",
+      "sender": "user1@gmail.com",
+      "tanggal": "14/03/2025"
+    }
+  }
+}
