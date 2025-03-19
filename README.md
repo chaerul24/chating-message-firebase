@@ -1,6 +1,6 @@
 # ChatApp
 
-ChatApp adalah aplikasi chatting real-time yang menggunakan teknologi Firebase untuk autentikasi, Brevo untuk pengiriman OTP email, dan backend PHP untuk menyimpan serta mengelola pesan dan file/gambar di server.
+ChatApp adalah aplikasi chatting real-time yang menggunakan teknologi Firebase untuk autentikasi, Brevo untuk pengiriman OTP email, dan backend PHP untuk menyimpan file/gambar di server.
 
 ## Fitur Utama
 
