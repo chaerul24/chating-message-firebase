@@ -16,7 +16,28 @@ Chating adalah aplikasi chatting real-time yang menggunakan teknologi Firebase u
 - **Firebase Authentication** - Untuk autentikasi pengguna.
 - **Brevo (Sendinblue API)** - Untuk pengiriman OTP ke email pengguna.
 - **Backend PHP** - Untuk mengelola autentikasi OTP, penyimpanan pesan, dan file/gambar.
-- **MySQL** - Untuk menyimpan data pengguna dan pesan.logika bisnis dan UI.
+- **MySQL** - Untuk menyimpan data pengguna dan pesan.
+
+## Struktur Backend (PHP)
+
+```
+📂 Backend (PHP)
+│── 📂 brevo/           # Folder untuk integrasi dengan Brevo (Sendinblue API)
+│── 📂 db/              # Folder database, kemungkinan berisi koneksi dan skema MySQL
+│── 📂 vendor/          # Folder untuk library PHP (Composer)
+│── .env               # File konfigurasi lingkungan (API keys, database credentials, dll.)
+│── call_status.php    # Skrip PHP untuk memeriksa status panggilan
+│── check_status.php   # Skrip PHP untuk memeriksa status OTP atau pengguna
+│── composer.json      # File konfigurasi Composer untuk dependensi PHP
+│── composer.lock      # File yang mengunci versi dependensi Composer
+│── config.php         # Konfigurasi utama backend, seperti koneksi database
+│── data.json         # File penyimpanan sementara data dalam format JSON
+│── end_call.php      # Skrip untuk mengakhiri panggilan
+│── index.php         # Skrip utama, mungkin sebagai endpoint utama API
+│── send_otp.php      # Skrip PHP untuk mengirim kode OTP ke email pengguna
+│── token.php         # Skrip untuk mengelola token autentikasi pengguna
+│── verify.php        # Skrip untuk verifikasi OTP pengguna
+```
 
 ## Instalasi dan Konfigurasi
 
@@ -61,29 +82,10 @@ BASE_URL_CALL_STATUS=
 BASE_URL_CALL_END=
 BASE_URL_TOKEN=
 BASE_URL_INDEX=
-BASE_URL_IAMGE=
+BASE_URL_IMAGE=
 ```
 
 ---
-
-### 6.Struktur Backend(PHP)
-📂 Backend (PHP)
-│── 📂 brevo/           # Folder untuk integrasi dengan Brevo (Sendinblue API)
-│── 📂 db/              # Folder database, kemungkinan berisi koneksi dan skema MySQL
-│── 📂 vendor/          # Folder untuk library PHP (Composer)
-│── .env               # File konfigurasi lingkungan (API keys, database credentials, dll.)
-│── call_status.php    # Skrip PHP untuk memeriksa status panggilan
-│── check_status.php   # Skrip PHP untuk memeriksa status OTP atau pengguna
-│── composer.json      # File konfigurasi Composer untuk dependensi PHP
-│── composer.lock      # File yang mengunci versi dependensi Composer
-│── config.php         # Konfigurasi utama backend, seperti koneksi database
-│── data.json         # File penyimpanan sementara data dalam format JSON
-│── end_call.php      # Skrip untuk mengakhiri panggilan
-│── index.php         # Skrip utama, mungkin sebagai endpoint utama API
-│── send_otp.php      # Skrip PHP untuk mengirim kode OTP ke email pengguna
-│── token.php         # Skrip untuk mengelola token autentikasi pengguna
-│── verify.php        # Skrip untuk verifikasi OTP pengguna
-
 
 **Dibuat dengan ❤️ oleh Chaerul Wahyu Iman Syah**
 
