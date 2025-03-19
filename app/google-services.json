@@ -1,14 +1,14 @@
 {
   "project_info": {
-    "project_number": "88252417204",
-    "firebase_url": "https://chating25-55da6-default-rtdb.firebaseio.com",
+    "project_number": "",
+    "firebase_url": "",
     "project_id": "chating25-55da6",
-    "storage_bucket": "chating25-55da6.firebasestorage.app"
+    "storage_bucket": ""
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:88252417204:android:bc4ea03d3a138dca4043e1",
+        "mobilesdk_app_id": "1:88252417204:android:bc4ea03d3a138dca404399",
         "android_client_info": {
           "package_name": "com.modern.chating"
         }
@@ -16,7 +16,7 @@
       "oauth_client": [],
       "api_key": [
         {
-          "current_key": "AIzaSyCRPvDwOumBElee3sY8_LfeF7YTC43lyiQ"
+          "current_key": ""
         }
       ],
       "services": {
